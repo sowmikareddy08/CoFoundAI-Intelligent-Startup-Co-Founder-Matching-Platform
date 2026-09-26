@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoFoundAI Matchmaker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>CoFoundAI Matchmaker</h1>
+    <form id="profileForm">
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Your name" required />
+      <label>Skills (comma separated)</label>
+      <input type="text" id="skills" placeholder="e.g. Python, product, marketing" />
+      <label>Interests (comma separated)</label>
+      <input type="text" id="interests" placeholder="e.g. AI, startups, design" />
+      <label>Startup Idea</label>
+      <textarea id="idea" placeholder="Describe your idea" rows="3"></textarea>
+      <label>Personality</label>
+      <input type="text" id="personality" placeholder="e.g. action-oriented, builder" />
+      <label>Goals</label>
+      <input type="text" id="goals" placeholder="e.g. build fast, win hackathon" />
+      <button type="submit">Find Match</button>
+    </form>
+
+    <div id="result" class="result hidden">
+      <h2>Co-Founder Match</h2>
+      <p id="matchScore"></p>
+      <p id="matchReason"></p>
+      <h3>Suggested Co-Founder</h3>
+      <p id="matchName"></p>
+      <p id="matchSkills"></p>
+      <h3>Suggested Roles</h3>
+      <p id="matchRoles"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

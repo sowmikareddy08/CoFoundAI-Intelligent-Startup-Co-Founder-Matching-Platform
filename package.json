@@ -1,0 +1,11 @@
+{
+  "name": "cofoundai-matchmaker",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
